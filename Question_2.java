@@ -1,18 +1,13 @@
-// Write a Java program to encrypt a grade by adding 8 to it . Decrypt it to show the correct grade .
+// Write a Java program to replace spaces with underscores
 
-package Practice_Set_2;
+package Practice_Set_3;
 
 public class Question_2 
 {
     public static void main(String[] args) 
     {
-        char grade = 'A';
-        
-        grade = (char)(grade + 8);
-        System.out.println("The encrypted grade is : " + grade);
-        
-        grade = (char)(grade - 8);
-        System.out.println("The decrypted grade is : " + grade);
-
+        String str = "Hi, I am Onkar Yogi!";
+        str = str.replace(" ", "_");
+        System.out.println("The replaced string is : " + str);
     }
 }
