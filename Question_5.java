@@ -1,14 +1,27 @@
-/* Write a program to format the following letter using escape sequence characters.
-   Letter = “Dear Harry, This Java Course is nice. Thanks” */
+// Write a Java program to find whether a year entered by the user is a leap year or not.
 
-package Practice_Set_3;
+package Practice_Set_4;
+
+import java.util.Scanner;
 
 public class Question_5 
 {
     public static void main(String[] args) 
     {
-        String Letter = "Dear Harry, This Java Course is nice. Thanks";
-        Letter = "Dear Harry,\n\tThis Java Course is nice.\nThanks";
-        System.out.println("The formatted letter is : \n\n" + Letter);
+        Scanner sc = new Scanner(System.in);
+        int year;
+        System.out.println("Enter the year : ");
+        year = sc.nextInt();
+
+        if((year %4 == 0 && year % 100!=0) || year %400 == 0)
+        { 
+            System.out.println("The year " + year + " is a leap year ");
+        }
+        else
+        {
+            System.out.println("The year " + year + " is not a leap year ");
+        }
+
+        sc.close();
     }
 }
