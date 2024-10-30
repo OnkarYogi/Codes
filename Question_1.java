@@ -1,28 +1,18 @@
-// Write a program to sum three numbers in Java
+/* What will be the result of the folllowing expression 
+   float a = 7/4*9/2 */
 
-package Practice_Set_1;
-import java.util.Scanner;
+package Practice_Set_2;
 
 public class Question_1 
 {
     public static void main(String[] args) 
     {
-        int num1,num2,num3,sum;
+        float a = 7/4*9/2;
+        /* = 1*9/2
+           = 9/2
+           = 4
+         */
 
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter the first number : ");
-        num1 = sc.nextInt();
-        
-        System.out.println("Enter the second number : ");
-        num2 = sc.nextInt();
-
-        System.out.println("Enter the third number : ");
-        num3 = sc.nextInt();
-        
-        sum = num1 + num2 + num3;
-        System.out.println("The sum of the numbers is : " + sum);
-
-        sc.close();
+        System.out.println("The result is : " + a);
     }
 }
