@@ -1,16 +1,16 @@
-// Write a Java program to detect whether a number entered by the user is an integer or not
+/* Find the value of 'a' in expression given below :
+int x = 7
+int a = 7*49/7 + 35/7 */
 
-package Practice_Set_1;
-import java.util.Scanner;
+package Practice_Set_2;
 
 public class Question_5 
 {
     public static void main(String[] args) 
     {
-        Scanner sc = new Scanner(System.in);
+        // int x = 7;
+        int a = 7*49/7 + 35/7;
 
-        System.out.println("Enter a number : ");
-        System.out.println("The number entered is an integer : " + sc.hasNextInt());
-        sc.close();
-    }
+        System.out.println("The value of 'a' is : " + a);
+    }    
 }

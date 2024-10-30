@@ -1,20 +1,20 @@
- /* Write a Java program which asks the user to enter his/her name and greets them with "Hello <name> , 
- have a good day " */
- 
-package Practice_Set_1;
+// Use comparison operators to find out if a given number is greater than the user entered number or not 
+
+package Practice_Set_2;
 import java.util.Scanner;
+
 public class Question_3 
 {
     public static void main(String[] args) 
     {
-        String name;
-
+        int num1;
+        int num2 = 80;
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter your name : ");
-        name = sc.nextLine();
+        System.out.println("Enter the number : ");
+        num1 = sc.nextInt();
 
-        System.out.println("Hello " + name + ", have a good day ");
+        System.out.println("The given number is greater than the user-defined number : " + (num2>num1));
         sc.close();
     }
 }
